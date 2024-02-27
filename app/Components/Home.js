@@ -14,16 +14,17 @@ const Home = (props) => {
   const [task, setTask] = useState('');
   const [reset, setReset] = useState(false);
 
+  useEffect(()=>{
+    setItems(props.data);
+  }, []);
+
+  {/* To collapse a To-do */}
   const setOpen = (params) => {
     let tempItems = [...items];
     tempItems[params].open = !tempItems[params].open;
     setItems(tempItems);
   };
-
-  useEffect(()=>{
-    setItems(props.data);
-  }, []);
-
+  // Create a To-do
   const createTask = () => {
     if(task.length>2){
       todos.create({task})
@@ -35,7 +36,7 @@ const Home = (props) => {
       })
     }
   }
-
+  // Update a To-do for both task-name & status-change
   const updateTask = (id, payload, index) => {
     todos.update(id, payload)
     .then(async(x)=>{
@@ -47,7 +48,7 @@ const Home = (props) => {
       }, 1000);
     })
   }
-
+  // Delete a todo 
   const deleteTask = (id) => {
     todos.remove(id)
     .then(async(x)=>{
@@ -65,6 +66,8 @@ const Home = (props) => {
   return (
     <div className="bg-cover h-screen" style={{backgroundImage:'url(assets/images/image.webp)'}}>
       <div className="flex flex-col grid justify-items-center content-center items-center self-center backdrop-blur-sm bg-black/20 h-screen">
+        
+        {/* Avatar Image */}
         <Image
           className="rounded-full border w-28 h-28 border-4 border-white shadow-xl"
           src="/assets/images/profile.jpg"
@@ -73,6 +76,8 @@ const Home = (props) => {
           height={100}
           priority
         />
+
+        {/* To-do Input Field */}
         <label className="relative block mt-5 ">
           <input 
             className="block bg-white border rounded-md py-2 pl-4 pr-3 w-[350px] shadow-md focus:outline-none focus:border-sky-500 sm:text-sm" 
@@ -81,6 +86,7 @@ const Home = (props) => {
             value={task}
             onChange={(e)=>setTask(e.target.value)}
           />
+        {/* To-do Input Field Button */}
           <span 
             className="absolute inset-y-0 right-0 flex items-center cursor-pointer"
             onClick={createTask}
@@ -90,12 +96,15 @@ const Home = (props) => {
             </div>
           </span>
         </label>
-          <div className="mt-6 border p-2 h-[40px] w-[350px] rounded-lg shadow-md backdrop-blur-3xl bg-white/10 flex justify-between">
-            <div className="flex">
-              <ListIcon/> <span className="mx-2 text-white">Your Todos</span>
-            </div>
-            <ChevronIcon/>
+
+        <div className="mt-6 border p-2 h-[40px] w-[350px] rounded-lg shadow-md backdrop-blur-3xl bg-white/10 flex justify-between">
+          <div className="flex">
+            <ListIcon/> <span className="mx-2 text-white">Your Todos</span>
           </div>
+          <ChevronIcon/>
+        </div>
+
+        {/* List of To-dos */}
         <div style={{height:300, overflowY:'auto', padding:10}}>
           <div className='w-[350px] ' >
             {items.length>0 && items.map((item, index)=>{
