@@ -1,4 +1,4 @@
-This is an assessment project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). for the purpose of getting hired by CCript.
+This is an assessment project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). for the purpose of getting hired by Ccript.
 
 ## Getting Started
 
