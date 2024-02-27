@@ -1,8 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). for the purpose of assessment to get hired in CCript.
 
 ## Getting Started
 
-First, run the development server:
+Server is required to run this code locall, which can be found [here](https://github.com/dev-status-200/ccript-server).
 
 ```bash
 npm run dev
