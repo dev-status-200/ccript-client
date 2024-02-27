@@ -19,4 +19,5 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ## Deployed on Vercel
 
 This repository is deployed on vercel, which is the easiest & most suitable hosting for Next.js projects.
+
 This is the [URL](https://ccript-client.vercel.app/).
