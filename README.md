@@ -2,7 +2,7 @@ This is an assessment project bootstrapped with [`create-next-app`](https://gith
 
 ## Getting Started
 
-server code is required to run this code locally, which can be found [here](https://github.com/dev-status-200/ccript-server). or place the contents of .env in the .env.development file to connect direcly with cloud hosted server.
+A local server is required to run this code locally, which can be found [here](https://github.com/dev-status-200/ccript-server). or place the contents of .env file, in to the .env.development file to connect direcly with cloud hosted server.
 
 After cloning this repository, make sure to install all the dependencies
 
@@ -13,15 +13,16 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This Project consist of only a single page
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 ## Project Dependencies
 
-1. Axios: To make simple & easy REST Api requests.
-2. Moment: To parse database date values into simple readable format.
-3. Tailwind CSS: As per the assemssement requirements.
-4. No other library has been used.
+1. [Axios](https://axios-http.com/docs/intro): To make simple & easy REST Api requests.
+2. [Moment](https://momentjs.com/): To parse database date values into simple readable format.
+3. [Tailwind CSS](https://v1.tailwindcss.com/): As per the assemssement requirements.
+4. No other dependency has been used, in order to keep the project as simple as possible.
 
 ## Project Features
 
@@ -40,8 +41,9 @@ Noe: All of this can be clearly understood by the project's simple UI, which is 
 2. All the API endpoints have been stored in the api folder, located in app directory.
 3. CSS has been used only for scroll-bar styling, otherwise all the styles are implemented from tailwind classes.
 4. This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+5. All images & icon files have been stored in public directory.
 
-## Deployed on Vercel
+## Deployment
 
 This repository is deployed on vercel, which is the easiest & most suitable hosting for Next.js projects.
 
