@@ -2,7 +2,7 @@ This is an assessment project bootstrapped with [`create-next-app`](https://gith
 
 ## Getting Started
 
-A local server is required to run this code locally, which can be found [here](https://github.com/dev-status-200/ccript-server). or place the contents of .env file, in to the .env.development file to connect direcly with cloud hosted server.
+A local server is required to run this code locally, which can be found [here](https://github.com/dev-status-200/ccript-server). or place the contents of `.env` file, in to the `.env.development` file to connect direcly with cloud hosted server.
 
 After cloning this repository, make sure to install all the dependencies
 
@@ -38,10 +38,10 @@ Noe: All of this can be clearly understood by the project's simple UI, which is 
 ## Code Structure
 
 1. Next.js's App-router structure is used.
-2. All the API endpoints have been stored in the api folder, located in app directory.
+2. All the API endpoints have been stored in `app/api/` directory.
 3. CSS has been used only for scroll-bar styling, otherwise all the styles are implemented from tailwind classes.
 4. This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-5. All images & icon files have been stored in public directory.
+5. All images & icon files have been stored in `public/` directory.
 
 ## Deployment
 
