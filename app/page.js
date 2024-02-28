@@ -1,3 +1,5 @@
+'use client'
+
 import todos from "@/app/api/todos/route";
 import HomeComponent from "@/app/Components/Home";
 
